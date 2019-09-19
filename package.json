@@ -1,14 +1,14 @@
 {
-  "name": "{{name}}",
-  "version": "{{version}}",
-  "description": "{{description}}",
+  "name": "zxvue-test",
+  "version": "1.0.0",
+  "description": "zxvue test",
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production --config webpack.prod.config",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --config webpack.dev.config"
   },
   "keywords": [],
-  "author": "{{author}}",
+  "author": "gzj",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.0",
