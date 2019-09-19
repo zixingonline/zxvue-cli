@@ -44,6 +44,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "mint-ui": "^2.2.13",
+    "mint-ui": "^2.2.13"
   }
 }
