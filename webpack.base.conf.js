@@ -113,7 +113,17 @@ module.exports = {
     // },
 
     optimization: {
-    	minimize: process.env.NODE_ENV === 'production' ? true : false,
+    	// minimize: process.env.NODE_ENV === 'production' ? true : false,		// 兼容IOS10版本在混淆压缩下的白屏问题--“参数与方法不能同名（如 e (e) {}）”
+    	minimizer: [
+			new UglifyJsPlugin({
+			    sourceMap: process.env.NODE_ENV === "development",
+			    parallel: 4,
+			    uglifyOptions: {
+			        keep_classnames: true,
+			        keep_fnames: true
+			    }
+			})
+    	],
 	    splitChunks: {
 	        cacheGroups: {
 	            vendor:{				
