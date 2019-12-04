@@ -7,8 +7,8 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');		
 
 module.exports = merge(baseConfig, {
 	plugins: [
-		new CleanWebpackPlugin(),		// 清理dist文件夹
-		new OptimizeCSSAssetsPlugin(),
+		new CleanWebpackPlugin(),			// 清理dist文件夹
+		new OptimizeCSSAssetsPlugin(),		// 压缩CSS文件
 	]
 })
 

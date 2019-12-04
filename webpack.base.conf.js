@@ -78,14 +78,14 @@ module.exports = {
 	plugins: [
 		new VueLoaderPlugin(),
 
-		new ImageminPlugin({
+		new ImageminPlugin({									// 图片压缩
 	      	disable: process.env.NODE_ENV !== 'production',
 	      	pngquant: {//图片质量
 	        	quality: '95-100'
 	      	}
 	    }),
 
-		new MiniCssExtractPlugin({
+		new MiniCssExtractPlugin({								// 提取CSS到单独的css文件
 			filename: './static/css/[name].[hash:8].css',
 	    }),
 
