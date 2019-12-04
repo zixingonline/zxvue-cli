@@ -1,7 +1,7 @@
 {
-  "name": "zxvue-test",
-  "version": "1.0.0",
-  "description": "zxvue test",
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production --config webpack.prod.config",
