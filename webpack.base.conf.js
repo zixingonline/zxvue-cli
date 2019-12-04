@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); 				// 打包关联html文件
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");		// css提取到一个文件
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');		// css压缩
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;		// 图片压缩工具
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
