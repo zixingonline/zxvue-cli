@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); 				// 打包关联htm
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");		// css提取到一个文件
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');		// css压缩
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;		// 图片压缩工具
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 
@@ -77,13 +76,6 @@ module.exports = {
 	},
 	plugins: [
 		new VueLoaderPlugin(),
-
-		new ImageminPlugin({									// 图片压缩
-	      	disable: process.env.NODE_ENV !== 'production',
-	      	pngquant: {//图片质量
-	        	quality: '95-100'
-	      	}
-	    }),
 
 		new MiniCssExtractPlugin({								// 提取CSS到单独的css文件
 			filename: './static/css/[name].[hash:8].css',
